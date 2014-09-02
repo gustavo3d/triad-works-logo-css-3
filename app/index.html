@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app>
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +7,7 @@
   <title>Polymer WebApp</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css styles/main.css -->
@@ -22,7 +23,9 @@
 <body unresolved>
 
   <div class="content">
-  <logo-triad width="700"></logo-triad>
+  <logo-triad width="{{width}}"></logo-triad>
+   <input type="text" ng-model="width">
+   <h1>{{width}}</h1>
   </div>
 
   <!-- build:js scripts/app.js -->

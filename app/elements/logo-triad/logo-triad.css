@@ -4,6 +4,7 @@
 /* styles for the custom element itself - lowest specificity */
 .logo {
   position: relative;
+  margin: 0 auto;
 }
 .logo-icon {
   background: #1f1a17;
