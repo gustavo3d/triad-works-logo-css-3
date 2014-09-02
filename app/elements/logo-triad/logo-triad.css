@@ -1,0 +1,73 @@
+/* Shadow DOM CSS Cheat Sheet */
+/* http://robdodson.me/blog/2014/04/10/shadow-dom-css-cheat-sheet */
+
+/* styles for the custom element itself - lowest specificity */
+.logo {
+  position: relative;
+  margin: 0 auto;
+}
+.logo-icon {
+  background: #1f1a17;
+  border-radius: 1000px;
+  position: relative;
+  float: left;
+}
+.logo-text  {
+  float: left;
+  font-family: 'Zurich';
+  color: #1f1a17;
+}
+
+.logo-text span {
+  font-family: 'ZurichBold';
+}
+
+.logo-icon-t {
+  background: #fff;
+  -webkit-transform: skewX(-27deg);
+  border-radius: 5px 0 0 0;
+    position: absolute;
+    z-index: 2;
+}
+.logo-icon-black {
+  background: #1f1a17;
+  position: absolute;
+  z-index: 1;
+}
+.logo-icon-detail {
+  background: #fff;
+  -webkit-transform: rotate(-59deg) skewX(-27deg);
+  border-radius: 5px 0 0 0;
+
+}
+.logo-icon-detail-2 {
+  background: #fff;
+  -webkit-transform: rotate(-59deg) skewX(-27deg);
+  border-radius: 5px 10px 0 0;
+}
+.logo-icon-detail-3 {
+  background: #fff;
+  -webkit-transform: rotate(-59deg) skewX(-27deg);
+  border-radius: 5px 0 0 0;
+}
+
+/**** Fonts ******/
+@font-face {
+  font-family: 'ZurichBold';
+  src: url('../../fonts/ZurichBT-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/ZurichBT-BoldCondensed.woff') format('woff'),
+       url('../../fonts/ZurichBT-BoldCondensed.ttf')  format('truetype'),
+       url('../../fonts/ZurichBT-BoldCondensed.svg#ZurichBT-BoldCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zurich';
+  src: url('../../fonts/ZurichBT-RomanCondensed.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/ZurichBT-RomanCondensed.woff') format('woff'),
+       url('../../fonts/ZurichBT-RomanCondensed.ttf')  format('truetype'),
+       url('../../fonts/ZurichBT-RomanCondensed.svg#ZurichBT-RomanCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

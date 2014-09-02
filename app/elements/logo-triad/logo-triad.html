@@ -1,0 +1,31 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="logo-triad"  attributes="width">
+  <template>
+    <link rel="stylesheet" href="logo-triad.css">
+    <div class="logo" style="width: {{ width }}px;">
+      <div class="logo-icon" style="width: {{ width*26/100 }}px; height:{{ width*26/100 }}px; margin-right:{{ width*2/100 }}px;">
+        <div class="logo-icon-t" style="width: {{ width*11/100 }}px; height:{{ width*3/100 }}px; margin-left:{{ width*7/100 }}px; margin-top:{{ width*7/100 }}px;"></div>
+        <div class="logo-icon-black" style="width: {{ width*9/100 }}px; height:{{ width*3.25/100 }}px; left:{{ width*13.75/100 }}px; top:{{ width*7/100 }}px;"></div>
+        <div class="logo-icon-detail" style="width: {{ width*11.4/100 }}px; height:{{ width*3/100 }}px; margin-left:{{ width*4/100 }}px; margin-top:{{ width*12/100 }}px;"></div>
+        <div class="logo-icon-detail-2" style="width: {{ width*11/100 }}px; height:{{ width*3/100 }}px; margin-left:{{ width*8/100 }}px; margin-top:-{{ width*3/100 }}px;"></div>
+         <div class="logo-icon-detail-3" style="width: {{ width*11/100 }}px; height:{{ width*3/100 }}px; margin-left:{{ width*11.75/100 }}px; margin-top:-{{ width*3/100 }}px;"></div>
+
+      </div>
+       <div class="logo-text" style="width: {{ width*72/100 }}px; height:{{ width*12/100 }}px; margin-top:{{ width*8/100 }}px; font-size: {{ width*16/100 }}px; line-height: {{ width*12.25/100 }}px;">
+        <span>Triad</span>Works
+      </div>
+    </div>
+    <input type="text" value="{{ width }}">
+    </template>
+  <script>
+    (function () {
+      'use strict';
+
+      Polymer({
+        width : 500
+      });
+
+    })();
+  </script>
+</polymer-element>
