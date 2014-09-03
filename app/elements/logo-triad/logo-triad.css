@@ -2,6 +2,28 @@
 /* http://robdodson.me/blog/2014/04/10/shadow-dom-css-cheat-sheet */
 
 /* styles for the custom element itself - lowest specificity */
+/**** Fonts ******/
+@font-face {
+  font-family: 'ZurichBold';
+  src: url('../../fonts/ZurichBT-BoldCondensed.eot');
+  src: url('../../fonts/ZurichBT-BoldCondensed.eot') format('embedded-opentype'),
+       url('../../fonts/ZurichBT-BoldCondensed.woff') format('woff'),
+       url('../../fonts/ZurichBT-BoldCondensed.ttf')  format('truetype'),
+       url('../../fonts/ZurichBT-BoldCondensed.svg#ZurichBT-BoldCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zurich';
+  src: url('../../fonts/ZurichBT-RomanCondensed.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/ZurichBT-RomanCondensed.woff') format('woff'),
+       url('../../fonts/ZurichBT-RomanCondensed.ttf')  format('truetype'),
+       url('../../fonts/ZurichBT-RomanCondensed.svg#ZurichBT-RomanCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .logo {
   position: relative;
   margin: 0 auto;
@@ -25,6 +47,10 @@
 .logo-icon-t {
   background: #fff;
   -webkit-transform: skewX(-27deg);
+  -moz-transform: skewX(-27deg);
+  -ms-transform: skewX(-27deg);
+  -o-transform: skewX(-27deg);
+  transform: skewX(-27deg);
   border-radius: 5px 0 0 0;
     position: absolute;
     z-index: 2;
@@ -34,40 +60,19 @@
   position: absolute;
   z-index: 1;
 }
-.logo-icon-detail {
+.logo-icon-detail, .logo-icon-detail-2, .logo-icon-detail-3 {
   background: #fff;
   -webkit-transform: rotate(-59deg) skewX(-27deg);
+  -moz-transform: rotate(-59deg) skewX(-27deg);
+  -ms-transform: rotate(-59deg) skewX(-27deg);
+  -o-transform: rotate(-59deg) skewX(-27deg);  
+  transform: rotate(-59deg) skewX(-27deg);
   border-radius: 5px 0 0 0;
 
 }
 .logo-icon-detail-2 {
-  background: #fff;
-  -webkit-transform: rotate(-59deg) skewX(-27deg);
   border-radius: 5px 10px 0 0;
 }
-.logo-icon-detail-3 {
-  background: #fff;
-  -webkit-transform: rotate(-59deg) skewX(-27deg);
-  border-radius: 5px 0 0 0;
-}
 
-/**** Fonts ******/
-@font-face {
-  font-family: 'ZurichBold';
-  src: url('../../fonts/ZurichBT-BoldCondensed.eot?#iefix') format('embedded-opentype'),
-       url('../../fonts/ZurichBT-BoldCondensed.woff') format('woff'),
-       url('../../fonts/ZurichBT-BoldCondensed.ttf')  format('truetype'),
-       url('../../fonts/ZurichBT-BoldCondensed.svg#ZurichBT-BoldCondensed') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Zurich';
-  src: url('../../fonts/ZurichBT-RomanCondensed.eot?#iefix') format('embedded-opentype'),
-       url('../../fonts/ZurichBT-RomanCondensed.woff') format('woff'),
-       url('../../fonts/ZurichBT-RomanCondensed.ttf')  format('truetype'),
-       url('../../fonts/ZurichBT-RomanCondensed.svg#ZurichBT-RomanCondensed') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+

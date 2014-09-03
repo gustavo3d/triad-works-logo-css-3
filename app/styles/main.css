@@ -1,4 +1,4 @@
-body {
+	body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
@@ -7,5 +7,67 @@ body {
 .content {
   margin: 50px auto 0 auto;
   text-align: center;
+  width: 970px;
+}
+.titleShadow {
+	font-family: 'Helvetica Neue', helvetica, arial;
+	color: #858585;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+}
+h1 span {
+	display: block;
+	height: auto;
+	font-family: "Helvetica Neue", helvetica, arial;
+	height: auto;
+	font-size: 14px;
+	line-height: 1em;
+	text-align: center;
+	color: #C0C0C0;
+	text-shadow: none;
+	letter-spacing: 0;
+	margin-top: 5px;
+}
+logo-triad {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.inputWidth {
+	width: 100%;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
+.howtouse {
+	width: 100%;
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.howtouse span{
+	width: 100%;
+	display: inline-block;
+	font-size: 40px;
+}
+.howtouse code{
+	padding: 40px;
+	display: inline-block;
+	background: #DDDDDD;
+	opacity: 0.5;
+	border-radius: 10px;
+}
+.madeby {
+  text-align:center;
+  width: 380px;
+  margin:0 auto;
+  padding: 10px 20px;
+  font-size:14px;
+  color:#ccc;
+  margin-top: 20px;
+}
+.madeby:hover {}
+.madeby a {color:#cd9552;}
+.madeby a:hover, .madeby a:focus {text-decoration: underline;}

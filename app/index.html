@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="polymerApp">
 
 <head>
   <meta charset="utf-8">
@@ -20,12 +20,29 @@
   <!-- endbuild-->
 </head>
 
-<body unresolved>
+<body unresolved >
 
-  <div class="content">
+  <div class="content" ng-controller="polymerController" >
+  <div class="col-1 center">
+    <div class="titleShadow">TriadWorks Logo in CSS3 and Polymer</div>
+    <h1 class="description"><span>Polymer + AngularJS + Just CSS3 (no images)</span></h1>
+  </div>
+  
   <logo-triad width="{{width}}"></logo-triad>
-   <input type="text" ng-model="width">
-   <h1>{{width}}</h1>
+  
+  <div class="inputWidth">
+  <span>Enter the value for width:</span>
+    <input type="text" ng-model="width">
+  </div>
+  <div class="howtouse">
+    <span>How to use</span>
+    <code>
+    &lt;triad-logo width="{{width}}"&gt; &lt;/triad-logo&gt;
+    </code>
+  </div>
+  <p class="madeby">
+            By <a href="http://twitter.com/gustavo3d" title="@gustavo3d" target="_blank" rel="external">Gustavo Fernandez</a> </a>
+        </p>
   </div>
 
   <!-- build:js scripts/app.js -->
